@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 0.5px solid #929397;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    margin-right: auto;
+}
+li{
+    list-style: none;
+    margin-right: 0.7rem;
+}
+a{
+    text-decoration: none;
+    color: var(--clr-text-gray);
+    transition: 0.3s ease-in-out;
+}
+a:hover{
+    color: var(--clr-text-dark);
+}
+a:hover::after{
+    /* TODO: a faire ! */
+    content: " ";
+    width: 80%;
+    height: 2px;
+    background-color: var(--clr-orange-btn);
+    /* position: absolute;
+    bottom: 0px;
+    left: 0px; */
+}
+
+.img_logo{
+    width: 138px;
+    height: 20px;
+}
+.img_cart{
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+}
+.img_avatar{
+    margin-left: 1rem;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}

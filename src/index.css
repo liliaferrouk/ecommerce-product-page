@@ -11,7 +11,7 @@
   --clr-ligne-gray: #929397;
 
   --clr-text-orange: #e1893e;
-  --clr-text-gray: #edecef;
+  --clr-text-gray: hsl(219, 9%, 45%);
   --clr-text-dark: #1d2026;
   --clr-text-dark-gray: #89898e;
   --clr-text-light-gray: #babdc2;
@@ -98,6 +98,9 @@ select {
 }
 
 /* styling */
+body{
+  padding: 0px 50px;
+}
 
 
 
