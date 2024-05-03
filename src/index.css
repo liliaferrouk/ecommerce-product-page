@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
 :root {
   /* colors */
+  --clr-blanc : #ffffff;
+  --clr-black: #000000;
+  /* page normal */
+  --clr-orange-btn: #ff7d1b;
+  --clr-light-orange-discount: #feefe1;
+  --clr-light-gray-conter: #f7f8fd;
+  --clr-ligne-gray: #929397;
+
+  --clr-text-orange: #e1893e;
+  --clr-text-gray: #edecef;
+  --clr-text-dark: #1d2026;
+  --clr-text-dark-gray: #89898e;
+  --clr-text-light-gray: #babdc2;
+
+  /* hovers */
+  --clr-hover-women: #ffac6a;
+  --clr-hover-btn: #ed8234;
 
 }
 
@@ -41,7 +60,7 @@ p {
 
 /* set up the body */
 body {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
 }

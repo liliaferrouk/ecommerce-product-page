@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from './Header'
+import AfficheImages from './AfficheImages'
+import AfficheText from './AfficheText'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <Header/>
+      <main>
+        <AfficheImages/>
+        <AfficheText/>
+      </main>
+    </div>
   )
 }
 
