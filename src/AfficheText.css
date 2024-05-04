@@ -1,5 +1,132 @@
 .section-text{
-    height: 100%;
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 50%;
-    padding: 2rem 1rem;
+}
+
+.sneaker_company{
+    color: var(--clr-text-orange);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.9rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.description{
+    font-size: 0.91rem;
+    color: var(--clr-text-gray);
+    margin-bottom: 1rem;
+}
+
+.prix{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.prix span{
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsl(25, 100%, 94%);
+    color: var(--clr-text-orange);
+    margin-left: 1rem;
+    border-radius: 4px;
+    padding: 1px 6px;
+}
+
+.prix-original{
+    color: var(--clr-text-light-gray);
+    font-weight: 600;
+    text-decoration:line-through;
+    font-size: 0.9rem;
+}
+
+.compteur{
+    display: flex;
+    width: 38%;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-light-gray-conter);
+    padding-inline: 1rem;
+    border-radius: 10px;
+}
+.compteur span{
+    font-weight: 600;
+}
+.img_plus{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.img_minus{
+    width: 12px;
+    height: 4px;
+    cursor: pointer;
+}
+.btn-add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-text-orange);
+    height: 3rem;
+    width: 60%;
+    border-radius: 10px;
+    color: var(--clr-blanc);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px var(--clr-text-orange);
+}
+.btn-add-to-cart img{
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:930px) {
+    .section-text{
+        padding: 10rem 2rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .section-text{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .prix-original{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .section-text{
+        padding: 1.25rem;
+        margin-bottom: 3rem;
+    }
+    .box{
+        display: block;
+    }
+    .btn-add-to-cart{
+        width: 100%;
+    }
+    .compteur{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

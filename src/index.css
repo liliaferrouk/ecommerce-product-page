@@ -10,7 +10,7 @@
   --clr-light-gray-conter: #f7f8fd;
   --clr-ligne-gray: #929397;
 
-  --clr-text-orange: #e1893e;
+  --clr-text-orange: hsl(26, 100%, 55%);
   --clr-text-gray: hsl(219, 9%, 45%);
   --clr-text-dark: #1d2026;
   --clr-text-dark-gray: #89898e;
@@ -106,7 +106,32 @@ body{
 
 main{
   display: flex;
-  align-items: center;
+  margin: 5vh 5vw;
+  padding: 5vw 0;
+}
+
+@media screen and (max-width:1060px) {
+  main{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:850px) {
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 7vw;
+  }
+}
+
+@media screen and (max-width:450px) {
+  /* mobile */
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 

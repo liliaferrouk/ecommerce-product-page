@@ -61,6 +61,9 @@ a:hover::after{
     header{
         height: 4rem;
         border-bottom: 0;
+        position: fixed;
+        z-index: 200;
+        background-color: #fff;
     }
     .img_avatar{
         margin-right: 1.5rem;
