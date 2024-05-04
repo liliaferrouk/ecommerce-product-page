@@ -5,7 +5,7 @@ import AfficheText from './AfficheText'
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Header/>
       <main>
         <AfficheImages/>
