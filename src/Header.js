@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import img_logo from './images/logo.svg'
 import img_cart from './images/icon-cart.svg'
 import img_avatar from './images/image-avatar.png'
+import img_menu from './images/icon-menu.svg'
+import img_close from './images/icon-close.svg'
 
 function Header() {
+  const [mobileMenuActive,setMobileMenuActive] = useState(false)
   return (
     <header>
+      <img className='img_menu_mobile'
+            src={mobileMenuActive ? img_close : img_menu}
+            onClick={()=>setMobileMenuActive(prev=>!prev)}
+            alt={mobileMenuActive ? "close menu" : "show menu"}/>
       <img className='img_logo' src={img_logo} alt="logo"/>
-      <ul>
-      <li><a href="index.html">Collections</a></li>
+      <ul className={mobileMenuActive ? "" :"hidelistmenu"}>
+      <li><a className='active' href="index.html">Collections</a></li>
       <li><a href="index.html">Men</a></li>
       <li><a href="index.html">Women</a></li>
       <li><a href="index.html">About</a></li>
