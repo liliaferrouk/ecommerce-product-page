@@ -48,11 +48,11 @@ function AfficheImages() {
       </div>
       {images.map((image, index) => (
             <img
-                key={index} // Use index as the key for each image
+                key={index}
                 src={image}
-                alt={`Product ${index + 1}`} // Provide an appropriate alt text
-                className={`small_img ${chosenImage === image ? 'active' : ''}`} // Conditionally add the active class
-                onClick={() => setChosenImage(image)} // Set the chosen image when clicked
+                alt={`Product ${index + 1}`}
+                className={`small_img ${chosenImage === image ? 'active' : ''}`}
+                onClick={() => setChosenImage(image)}
             />
         ))}
 

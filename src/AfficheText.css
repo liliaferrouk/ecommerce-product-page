@@ -86,6 +86,9 @@ h1{
     cursor: pointer;
     box-shadow: 5px 5px 15px var(--clr-text-orange);
 }
+.btn-add-to-cart:hover{
+    opacity: 0.5;
+}
 .btn-add-to-cart img{
     width: 15px;
     height: 12px;

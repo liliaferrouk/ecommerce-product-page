@@ -6,8 +6,12 @@ import img_avatar from './images/image-avatar.png'
 import img_menu from './images/icon-menu.svg'
 import img_close from './images/icon-close.svg'
 
-function Header() {
+function Header({setCartVisible}) {
   const [mobileMenuActive,setMobileMenuActive] = useState(false)
+
+  function handleCartClick(){
+      setCartVisible(prev=>!prev)
+  }
   return (
     <header>
       <img className='img_menu_mobile'
@@ -22,7 +26,12 @@ function Header() {
       <li><a href="index.html">About</a></li>
       <li><a href="index.html">Contact</a></li>
       </ul>
-      <img className='img_cart' src={img_cart} alt="cart"/>
+      <img
+        className='img_cart'
+        src={img_cart}
+        onClick={handleCartClick}
+        alt="cart"
+      />
       <img className='img_avatar' src={img_avatar} alt="cart"/>
 
     </header>

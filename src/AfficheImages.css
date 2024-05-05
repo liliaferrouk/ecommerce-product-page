@@ -48,6 +48,7 @@ img.active{
         margin: 0;
         padding: 0;
         margin-bottom: 3rem;
+        margin-top: 2rem;
     }
     .big_img{
         cursor: default;
@@ -59,7 +60,7 @@ img.active{
     .section-images{
         display: block;
         position: relative;
-        margin-top: 80px;
+        margin-top: 4rem;
         margin-bottom: 0;
     }
     .small_img{
@@ -134,7 +135,7 @@ img.active{
 
 .popup{
     position: absolute;
-    
+    top:-1rem;
 }
 
 .btn-pop{

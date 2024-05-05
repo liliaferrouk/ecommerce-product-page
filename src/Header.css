@@ -57,6 +57,11 @@ a:hover::after{
     cursor: pointer;
 }
 
+.img_avatar:hover{
+    border: 2px solid #ff7d1b;
+    border-radius: 50%;
+}
+
 @media screen and (max-width:700px) {
     header{
         height: 4rem;
