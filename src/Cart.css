@@ -24,6 +24,7 @@
 .cart-elements{
     border-top: 0.5px solid #929397;
     padding: 1.5rem 2rem;
+    position: relative;
 }
 
 .cart-produit{
@@ -72,6 +73,14 @@
 
 .btn-checkout:hover{
     opacity: 0.5;
+}
+
+.empty-cart-p{
+    position: absolute;
+    color: var(--clr-text-gray);
+    font-weight: 600;
+    left: 29%;
+    top: 120%;
 }
 
 @media screen and (min-width:450px) {

@@ -4,7 +4,7 @@ import img_minus from './images/icon-minus.svg'
 import img_plus from './images/icon-plus.svg'
 import img_cart from './images/icon-cart2.svg'
 
-function AfficheText({compteur,setCompteur}) {
+function AfficheText({compteur,setCompteur,setNbItems}) {
   return (
     <section className='section-text'>
       <p className='sneaker_company'>Sneaker Company</p>
@@ -20,7 +20,7 @@ function AfficheText({compteur,setCompteur}) {
           <span>{compteur}</span>
           <img className='img_plus' onClick={()=>{setCompteur(prev=> prev <20 ? prev+1 : prev)}} src={img_plus} alt="plus" />
         </div>
-        <div className='btn-add-to-cart'>
+        <div className='btn-add-to-cart' onClick={()=>{setNbItems(prev=>prev+compteur); setCompteur(0)}}>
           <img src={img_cart} alt="cart" />
           Add to cart
         </div>

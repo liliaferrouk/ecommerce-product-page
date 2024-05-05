@@ -7,13 +7,14 @@ import Cart from './Cart'
 function App() {
   const [cartVisible,setCartVisible] = useState(false)
   const[compteur,setCompteur] = useState(0)
+  const[nbItems,setNbItems] = useState(0)
   return (
     <div className='App'>
-      <Header setCartVisible={setCartVisible}/>
-      {cartVisible && <Cart setCartVisible={setCartVisible}/>}
+      <Header setCartVisible={setCartVisible} nbItems={nbItems}/>
+      {cartVisible && <Cart setCartVisible={setCartVisible} nbItems={nbItems} setNbItems={setNbItems}/>}
       <main>
         <AfficheImages/>
-        <AfficheText compteur={compteur} setCompteur={setCompteur}/>
+        <AfficheText compteur={compteur} setCompteur={setCompteur} setNbItems={setNbItems}/>
       </main>
     </div>
   )

@@ -48,7 +48,23 @@ a:hover::after{
 .img_cart{
     width: 22px;
     height: 20px;
+}
+.boxcart{
     cursor: pointer;
+    position: relative;
+}
+.nb-items-cart{
+    background-color: var(--clr-text-orange);
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: -5px;
 }
 .img_avatar{
     margin-left: 2rem;
@@ -112,7 +128,7 @@ a:hover::after{
     a:hover::after{
         bottom: -0.75rem;
     }
-    .img_cart{
+    .boxcart{
         margin-left: auto;
     }
 }
